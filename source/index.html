@@ -10,12 +10,52 @@
 
   <body class="page-body">
     <!-- пример использования спрайта -->
+    <!--
     <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
     <svg>
       <use href="/__spritemap#sprite-user"></use>
     </svg>
+    -->
     <!-- примеры требуемых атрибутов data-test="*" -->
-    <div data-test="hero">hero</div>
+    <div data-test="hero">
+      <header class="page-header">
+        <div class="container page-header__container">
+          <div class="page-header__logo-wrapper">
+            <img src="/__spritemap#sprite-logo-view" alt="Лого" height="52" width="52">
+          </div>
+          <nav class="page-header__navigation">
+            <ul class="page-header__main-nav-list">
+              <li class="page-header__main-nav-item"><a class="page-header__main-nav-link" href="#">О проекте</a></li>
+              <li class="page-header__main-nav-item">
+                <a class="page-header__main-nav-link" href="#">Программы</a>
+                <ul class="page-header__second-nav-list">
+                  <li class="page-header__second-nav-item"><a class="page-header__second-nav-link" href="#">Стажировки</a></li>
+                  <li class="page-header__second-nav-item"><a class="page-header__second-nav-link" href="#">Волонтёрство</a></li>
+                  <li class="page-header__second-nav-item"><a class="page-header__second-nav-link" href="#">Учёба</a></li>
+                  <li class="page-header__second-nav-item"><a class="page-header__second-nav-link" href="#">Религия</a></li>
+                </ul>
+              </li>
+              <li class="page-header__main-nav-item"><a class="page-header__main-nav-link" href="#">Как поехать</a></li>
+              <li class="page-header__main-nav-item"><a class="page-header__main-nav-link" href="#">Отзывы</a></li>
+              <li class="page-header__main-nav-item">
+                <a class="page-header__main-nav-link" href="#">Новости</a>
+                <ul class="page-header__second-nav-list">
+                  <li class="page-header__second-nav-item"><a class="page-header__second-nav-link" href="#">Стажировки</a></li>
+                  <li class="page-header__second-nav-item"><a class="page-header__second-nav-link" href="#">Волонтёрство</a></li>
+                  <li class="page-header__second-nav-item"><a class="page-header__second-nav-link" href="#">Учёба</a></li>
+                  <li class="page-header__second-nav-item"><a class="page-header__second-nav-link" href="#">Религия</a></li>
+                </ul>
+              </li>
+              <li class="page-header__main-nav-item"><a class="page-header__main-nav-link" href="#">Контакты</a></li>
+            </ul>
+          </nav>
+          <div class="page-header__button-field">
+            <span class="page-header__label">Mеню</span>
+            <button class="page-header__menu-button" type="button"><span class="visually-hidden">Кнопка открытия меню</span></button>
+          </div>
+        </div>
+      </header>
+    </div>
     <div data-test="about">about</div>
     <div data-test="programs">programs</div>
     <div data-test="grant">grant</div>
