@@ -23,7 +23,7 @@
           <div class="page-header__logo-wrapper">
             <img src="/__spritemap#sprite-logo-view" alt="Лого" height="52" width="52">
           </div>
-          <nav class="page-header__navigation page-header__navigation--open">
+          <nav class="page-header__navigation">
             <ul class="page-header__main-nav-list">
               <li class="page-header__main-nav-item"><a class="page-header__main-nav-link" href="#">О проекте</a></li>
               <li class="page-header__main-nav-item">
@@ -40,21 +40,21 @@
               <li class="page-header__main-nav-item">
                 <a class="page-header__main-nav-link page-header__main-nav-link--has-subcategory" href="#">Новости</a>
                 <ul class="page-header__second-nav-list">
-                  <li class="page-header__second-nav-item"><a class="page-header__second-nav-link" href="#">Стажировки</a></li>
                   <li class="page-header__second-nav-item"><a class="page-header__second-nav-link" href="#">Волонтёрство</a></li>
-                  <li class="page-header__second-nav-item"><a class="page-header__second-nav-link" href="#">Учёба</a></li>
-                  <li class="page-header__second-nav-item"><a class="page-header__second-nav-link" href="#">Религия</a></li>
+                  <li class="page-header__second-nav-item"><a class="page-header__second-nav-link" href="#">Стажировки</a></li>
+                  <li class="page-header__second-nav-item"><a class="page-header__second-nav-link" href="#">Карьера</a></li>
+                  <li class="page-header__second-nav-item"><a class="page-header__second-nav-link" href="#">Путешествия</a></li>
                 </ul>
               </li>
               <li class="page-header__main-nav-item"><a class="page-header__main-nav-link" href="#">Контакты</a></li>
             </ul>
           </nav>
-          <div class="page-header__button-field page-header__button-field--opened">
+          <div class="page-header__button-field">
             <span class="page-header__label">Mеню</span>
             <button class="page-header__menu-button" type="button"><span class="visually-hidden">Кнопка открытия меню</span></button>
           </div>
         </div>
-        <div class="page-header__menu-overlay page-header__menu-overlay--opened"></div>
+        <div class="page-header__menu-overlay"></div>
       </header>
       <section class="hero">
         <h1 class="visually-hidden">Internship</h1>
@@ -63,13 +63,70 @@
           <!-- Additional required wrapper -->
           <div class="swiper-wrapper">
             <!-- Slides -->
-            <div class="swiper-slide hero__swiper-slide">Slide 1</div>
-            <div class="swiper-slide hero__swiper-slide">Slide 2</div>
-            <div class="swiper-slide hero__swiper-slide">Slide 3</div>
-            ...
+            <div class="swiper-slide hero__swiper-slide">
+              <div class="hero__picture-wrapper">
+                <picture>
+                  <source media="(min-width: 1440px)" width="1440" height="800" type="image/webp" srcset="./img/hero/hero-large-1@1x.webp 1x, ./img/hero/hero-large-1@2x.webp 2x">
+                  <source media="(min-width: 1440px)" width="1440" height="800" type="image/jpg" srcset="./img/hero/hero-large-1@1x.jpg 1x,
+                  ./img/hero/hero-large-1@2x.jpg 2x">
+                  <source media="(min-width: 768px)" width="768" height="1024" type="image/webp" srcset="./img/hero/hero-medium-1@1x.webp 1x, ./img/hero-medium-1@2x.webp 2x">
+                  <source media="(min-width: 768px)" width="768" height="1024" type="image/jpg" srcset="./img/hero/hero-medium-1@1x.jpg 1x,
+                  ./img/hero/hero-medium-1@2x.jpg 2x">
+                  <source width="320" height="568" type="image/webp" srcset="./img/hero/hero-mini-1@1x.webp 1x,
+                  ./img/hero/hero-mini-1@2x.webp 2x">
+                  <img class="hero__slide-image" width="320" height="568" src="./img/hero/hero-mini-1@1x.jpg" alt="Слайд 1" srcset="./img/hero/hero-mini-1@1x.jpg 1x,
+                  ./img/hero/hero-mini-1@2x.jpg 2x">
+                </picture>
+              </div>
+              <div class="hero__text-wrapper">
+                <h2>
+                  Глобальный профессиональный опыт обучения за&nbsp;рубежом
+                </h2>
+                <p>Погрузитесь в академическую
+                  программу, проходя практику
+                  в разных городах, ощущая
+                  настоящий студенческий стиль жизни!</p>
+                <div class="hero__button-wrapper">
+                  <a class="hero__button-link" href="#">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide hero__swiper-slide">
+              <div class="hero__picture-wrapper">
+                <picture>
+                  <source media="(min-width: 1440px)" width="1440" height="800" type="image/webp" srcset="./img/hero/hero-large-2@1x.webp 1x, ./img/hero/hero-large-2@2x.webp 2x">
+                  <source media="(min-width: 1440px)" width="1440" height="800" type="image/jpg" srcset="./img/hero/hero-large-2@1x.jpg 1x,
+                  ./img/hero/hero-large-2@2x.jpg 2x">
+                  <source media="(min-width: 768px)" width="768" height="1024" type="image/webp" srcset="./img/hero/hero-medium-2@1x.webp 1x, ./img/hero-medium-2@2x.webp 2x">
+                  <source media="(min-width: 768px)" width="768" height="1024" type="image/jpg" srcset="./img/hero/hero-medium-2@1x.jpg 1x,
+                  ./img/hero/hero-medium-2@2x.jpg 2x">
+                  <source width="320" height="568" type="image/webp" srcset="./img/hero/hero-mini-2@1x.webp 1x,
+                  ./img/hero/hero-mini-2@2x.webp 2x">
+                  <img class="hero__slide-image" width="320" height="568" src="./img/hero/hero-mini-2@1x.jpg" alt="Слайд 1" srcset="./img/hero/hero-mini-2@1x.jpg 1x,
+                  ./img/hero/hero-mini-2@2x.jpg 2x">
+                </picture>
+              </div>
+            </div>
+            <div class="swiper-slide hero__swiper-slide">
+              <div class="hero__picture-wrapper">
+                <picture>
+                  <source media="(min-width: 1440px)" width="1440" height="800" type="image/webp" srcset="./img/hero/hero-large-3@1x.webp 1x, ./img/hero/hero-large-3@2x.webp 2x">
+                  <source media="(min-width: 1440px)" width="1440" height="800" type="image/jpg" srcset="./img/hero/hero-large-3@1x.jpg 1x,
+                  ./img/hero/hero-large-3@2x.jpg 2x">
+                  <source media="(min-width: 768px)" width="768" height="1024" type="image/webp" srcset="./img/hero/hero-medium-3@1x.webp 1x, ./img/hero-medium-3@2x.webp 2x">
+                  <source media="(min-width: 768px)" width="768" height="1024" type="image/jpg" srcset="./img/hero/hero-medium-3@1x.jpg 1x,
+                  ./img/hero/hero-medium-3@2x.jpg 2x">
+                  <source width="320" height="568" type="image/webp" srcset="./img/hero/hero-mini-3@1x.webp 1x,
+                  ./img/hero/hero-mini-3@2x.webp 2x">
+                  <img class="hero__slide-image" width="320" height="568" src="./img/hero/hero-mini-3@1x.jpg" alt="Слайд 1" srcset="./img/hero/hero-mini-3@1x.jpg 1x,
+                  ./img/hero/hero-mini-3@2x.jpg 2x">
+                </picture>
+              </div>
+            </div>
           </div>
           <!-- If we need pagination -->
-          <div class="swiper-pagination"></div>
+          <div class="swiper-pagination hero__swiper-pagination"></div>
+          <div class="swiper-pagination hero__swiper-pagination"></div>
         </div>
       </section>
     </div>

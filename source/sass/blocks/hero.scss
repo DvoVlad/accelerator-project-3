@@ -1,0 +1,122 @@
+.hero {
+  margin-top: -75px;
+  position: relative;
+
+  @include media-tablet {
+    margin-top: -85px;
+  }
+}
+
+.hero__picture-wrapper {
+  position: relative;
+
+  &::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(49, 109, 194, 0.2);
+  }
+}
+
+.hero__slide-image {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
+.hero__swiper-slide {
+  position: relative;
+}
+
+.hero__text-wrapper {
+  position: absolute;
+  left: 15px;
+  bottom: 20px;
+}
+
+.hero__text-wrapper h2 {
+  margin: 0;
+  padding-left: 14px;
+  padding-right: 15px;
+  padding-top: 20px;
+  padding-bottom: 16px;
+  border-radius: 0 16px 16px 0;
+  color: #316dc2;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  width: 290px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+
+.hero__text-wrapper p {
+  position: relative;
+  margin: 0;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-bottom: 15px;
+  border-radius: 0 0 14px;
+  color: #484848;
+  font-size: 14px;
+  line-height: 20px;
+  width: 267px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+
+  &::after {
+    content: " ";
+    display: block;
+    width: 8px;
+    height: 10px;
+    position: absolute;
+    top: 0;
+    left: 267px;
+    background-image: url("/__spritemap#sprite-top-left-angle-view");
+    background-repeat: no-repeat;
+  }
+}
+
+.hero__button-wrapper {
+  background-color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 0 0 14px 14px;
+  box-sizing: border-box;
+  width: 184px;
+}
+
+.hero__button-link {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  padding-left: 21px;
+  padding-right: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #316dc2;
+  border: 1px solid #316dc2;
+  border-radius: 30px;
+  position: relative;
+  font-size: 12px;
+  line-height: 12px;
+
+  &::after {
+    content: " ";
+    display: block;
+    width: 34px;
+    height: 34px;
+    background-color: #316dc2;
+    border-radius: 44px;
+    background-image: url("/__spritemap#sprite-link-arrow-view");
+    background-repeat: no-repeat;
+    background-size: 8px 8px;
+    background-position: center center;
+    color: #ffffff;
+  }
+}
