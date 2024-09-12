@@ -23,11 +23,11 @@
           <div class="page-header__logo-wrapper">
             <img src="/__spritemap#sprite-logo-view" alt="Лого" height="52" width="52">
           </div>
-          <nav class="page-header__navigation">
+          <nav class="page-header__navigation page-header__navigation--open">
             <ul class="page-header__main-nav-list">
               <li class="page-header__main-nav-item"><a class="page-header__main-nav-link" href="#">О проекте</a></li>
               <li class="page-header__main-nav-item">
-                <a class="page-header__main-nav-link" href="#">Программы</a>
+                <a class="page-header__main-nav-link page-header__main-nav-link--has-subcategory" href="#">Программы</a>
                 <ul class="page-header__second-nav-list">
                   <li class="page-header__second-nav-item"><a class="page-header__second-nav-link" href="#">Стажировки</a></li>
                   <li class="page-header__second-nav-item"><a class="page-header__second-nav-link" href="#">Волонтёрство</a></li>
@@ -38,7 +38,7 @@
               <li class="page-header__main-nav-item"><a class="page-header__main-nav-link" href="#">Как поехать</a></li>
               <li class="page-header__main-nav-item"><a class="page-header__main-nav-link" href="#">Отзывы</a></li>
               <li class="page-header__main-nav-item">
-                <a class="page-header__main-nav-link" href="#">Новости</a>
+                <a class="page-header__main-nav-link page-header__main-nav-link--has-subcategory" href="#">Новости</a>
                 <ul class="page-header__second-nav-list">
                   <li class="page-header__second-nav-item"><a class="page-header__second-nav-link" href="#">Стажировки</a></li>
                   <li class="page-header__second-nav-item"><a class="page-header__second-nav-link" href="#">Волонтёрство</a></li>
@@ -49,12 +49,29 @@
               <li class="page-header__main-nav-item"><a class="page-header__main-nav-link" href="#">Контакты</a></li>
             </ul>
           </nav>
-          <div class="page-header__button-field">
+          <div class="page-header__button-field page-header__button-field--opened">
             <span class="page-header__label">Mеню</span>
             <button class="page-header__menu-button" type="button"><span class="visually-hidden">Кнопка открытия меню</span></button>
           </div>
         </div>
+        <div class="page-header__menu-overlay page-header__menu-overlay--opened"></div>
       </header>
+      <section class="hero">
+        <h1 class="visually-hidden">Internship</h1>
+        <!-- Slider main container -->
+        <div class="swiper hero__swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide hero__swiper-slide">Slide 1</div>
+            <div class="swiper-slide hero__swiper-slide">Slide 2</div>
+            <div class="swiper-slide hero__swiper-slide">Slide 3</div>
+            ...
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
     </div>
     <div data-test="about">about</div>
     <div data-test="programs">programs</div>
