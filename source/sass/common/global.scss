@@ -2,4 +2,10 @@ body {
   font-style: normal;
   min-width: 320px;
   font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+
+  @include media-tablet {
+    font-size: 16px;
+  }
 }

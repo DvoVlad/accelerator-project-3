@@ -232,7 +232,7 @@
     width: 34px;
     height: 34px;
     background-color: #316dc2;
-    border-radius: 44px;
+    border-radius: 50%;
     background-image: url("/__spritemap#sprite-link-arrow-view");
     background-repeat: no-repeat;
     background-size: 8px 8px;
@@ -341,14 +341,20 @@
 }
 
 .hero__swiper-pagination .swiper-pagination-bullet {
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   padding: 0;
   border: 2px solid #316dc2;
   border-radius: 50%;
   cursor: pointer;
 }
 
-.hero__swiper-pagination .swiper-pagination-bullet-active {
+.hero__swiper-pagination .swiper-pagination-bullet:hover {
+  border: 2px solid #ffffff;
   background-color: #316dc2;
+}
+
+.hero__swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #275699;
+  border: 2px solid #275699;
 }
