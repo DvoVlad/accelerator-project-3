@@ -2,6 +2,19 @@
   padding-top: 50px;
   padding-bottom: 50px;
   background-color: #f0efe9;
+
+  @include media-desktop {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.about__text-container {
+  @include media-desktop {
+    display: grid;
+    grid-template-columns: 702px 498px;
+    gap: 40px;
+  }
 }
 
 .about__title {
@@ -15,6 +28,11 @@
   @include media-tablet {
     font-size: 34px;
     line-height: 50px;
+  }
+
+  @include media-desktop {
+    font-size: 50px;
+    margin-top: 10px;
   }
 }
 
@@ -31,6 +49,12 @@
     line-height: 20px;
     max-width: 638px;
   }
+
+  @include media-desktop {
+    max-width: none;
+    font-size: 22px;
+    line-height: 32px;
+  }
 }
 
 .about__collumn h3 {
@@ -46,11 +70,22 @@
     line-height: 28px;
     margin-bottom: 30px;
   }
+
+  @include media-desktop {
+    font-size: 32px;
+    line-height: 36px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
 }
 
 .about__collumn h3 + p {
   @include media-tablet {
     max-width: 498px;
+  }
+
+  @include media-desktop {
+    max-width: none;
   }
 }
 
@@ -136,6 +171,10 @@
       height: 46px;
     }
   }
+
+  @include media-desktop {
+    margin-top: 50px;
+  }
 }
 
 .about__list {
@@ -157,6 +196,12 @@
     padding-bottom: 50px;
     padding-left: 70px;
     padding-right: 50px;
+  }
+
+  @include media-desktop {
+    padding-left: 120px;
+    padding-right: 100px;
+    grid-template-columns: 484px 484px;
   }
 }
 
@@ -185,6 +230,16 @@
   @include media-tablet {
     margin-bottom: 0;
   }
+
+  @include media-desktop {
+    display: grid;
+    grid-template-columns: 201px 1fr;
+    align-items: center;
+    padding-top: 31px;
+    padding-bottom: 31px;
+    padding-left: 41px;
+    padding-right: 41px;
+  }
 }
 
 .about__item:last-child {
@@ -199,10 +254,20 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  letter-spacing: 0.16px;
 
   @include media-tablet {
     font-size: 20px;
     line-height: 22px;
+    letter-spacing: 0.2px;
+  }
+
+  @include media-desktop {
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: 0.26px;
+    margin: 0;
+    padding-right: 10px;
   }
 }
 
@@ -212,8 +277,13 @@
   color: #f0efe9;
   font-size: 14px;
   line-height: 20px;
+  font-weight: 300;
 
   @include media-tablet {
     font-size: 16px;
+  }
+
+  @include media-desktop {
+    margin: 0;
   }
 }

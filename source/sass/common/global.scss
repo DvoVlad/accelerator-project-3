@@ -8,4 +8,8 @@ body {
   @include media-tablet {
     font-size: 16px;
   }
+
+  @include media-desktop {
+    line-height: 26px;
+  }
 }
