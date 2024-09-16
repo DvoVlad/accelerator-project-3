@@ -247,7 +247,53 @@
         </div>
       </section>
     </div>
-    <div data-test="programs">programs</div>
+    <div data-test="programs">
+      <section class="programs">
+        <div class="container programs__container">
+          <h2 class="programs__title">Программы</h2>
+          <div class="programs__button-wrapper">
+            <button class="programs__buttom-prev" type="button"><span class="visually-hidden">Кнопка назад</span></button>
+            <button class="programs__buttom-next" type="button"><span class="visually-hidden">Кнопка вперед</span></button>
+          </div>
+          <div class="swiper programs__swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide programs__swiper-slide">
+                <div class="programs__picture-wrapper">
+                  <picture>
+                    <source media="(min-width: 1440px)" width="392" height="420" type="image/webp" srcset="./img/program/program-large-1@1x.webp 1x, ./img/program/program-large-1@2x.webp 2x">
+                    <source media="(min-width: 1440px)" width="392" height="420" type="image/jpg" srcset="./img/program/program-large-1@1x.jpg 1x,
+                    ./img/program/program-large-1@2x.jpg 2x">
+                    <source media="(min-width: 768px)" width="324" height="420" type="image/webp" srcset="./img/program/program-medium-1@1x.webp 1x, ./img/program-medium-1@2x.webp 2x">
+                    <source media="(min-width: 768px)" width="324" height="420" type="image/jpg" srcset="./img/program/program-medium-1@1x.jpg 1x,
+                    ./img/program/program-medium-1@2x.jpg 2x">
+                    <source width="290" height="400" type="image/webp" srcset="./img/program/program-mini-1@1x.webp 1x,
+                    ./img/program/program-mini-1@2x.webp 2x">
+                    <img class="program__slide-image" width="290" height="400" src="./img/program/program-mini-1@1x.jpg" alt="Слайд 1" srcset="./img/program/program-mini-1@1x.jpg 1x,
+                    ./img/program/program-mini-1@2x.jpg 2x">
+                  </picture>
+                </div>
+                <div class="programs__text-wrapper">
+                  <h3>Стажировки</h3>
+                  <div class="programs__content">
+                    <p>Получите незаменимый опыт
+                      работы в крупнейших мировых
+                      компаниях.</p>
+                    <a class="programs__item-link" href="#"><span class="visually-hidden">Перейти в программу</span></a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide programs__swiper-slide">Slide 2</div>
+              <div class="swiper-slide programs__swiper-slide">Slide 3</div>
+            </div>
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar programs__swiper-scrollbar"></div>
+          </div>
+          <a class="programs__link" href="#">Все программы</a>
+        </div>
+      </section>
+    </div>
     <div data-test="grant">grant</div>
     <div data-test="news">news</div>
     <div data-test="FAQ">FAQ</div>
