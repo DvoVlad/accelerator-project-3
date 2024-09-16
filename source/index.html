@@ -191,6 +191,7 @@
             <button class="about__button-link" type="button">Подробнее о проекте</button>
             <div class="about__modal-overlay"></div>
             <div class="about__modal">
+              <button class="about__modal-close" type="button"><span class="visually-hidden">Закрыть</span></button>
               <h4 class="about__modal-title">Напишите нам</h4>
               <p class="about__modal-description">Оставьте ваши контакты, если у вас остались вопросы – мы на них ответим!</p>
               <form class="about__modal-form" method="post" action="https://echo.htmlacademy.ru">
@@ -204,14 +205,16 @@
                 </label>
                 <label class="about__label">
                   <span>Выберите город</span>
-                  <select class="about__select" name="city">
+                  <select class="about__select" required name="city">
                     <option value="" checked></option>
+                    <option value="Санкт-Петербург">Санкт-Петербург</option>
                   </select>
                 </label>
                 <label class="about__checkbox-label">
                   <input class="visually-hidden" name="confirm" type="checkbox" value="Y">
                   <span>Я согласен на обработку моих персональных данных</span>
                 </label>
+                <button class="about__modal-submit" type="submit"><span>Отправить</span></button>
               </form>
             </div>
           </div>
