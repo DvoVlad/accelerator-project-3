@@ -12,6 +12,14 @@
     "title  buttons"
     "slider slider"
     "link   link";
+
+  @include media-tablet {
+    grid-template-columns: 1fr auto;
+    grid-template-areas:
+      "title  link"
+      "slider slider"
+      "scroll buttons";
+  }
 }
 
 .programs__title {
@@ -71,6 +79,10 @@
 .programs__swiper {
   width: 290px;
   grid-area: slider;
+
+  @include media-tablet {
+    width: 678px;
+  }
 }
 
 .programs__picture-wrapper {
@@ -88,8 +100,25 @@
   }
 }
 
-.programs__swiper-scrollbar {
+.programs__scrollbar-wrapper {
   display: none;
+
+  @include media-tablet {
+    display: block;
+    grid-area: scroll;
+    position: relative;
+    align-self: center;
+    height: 22px;
+  }
+}
+
+.programs__swiper-scrollbar {
+  --swiper-scrollbar-sides-offset: 0;
+  --swiper-scrollbar-top: 10px;
+  --swiper-scrollbar-bg-color: rgba(49, 109, 194, 0.2);
+  --swiper-scrollbar-drag-bg-color: #316dc2;
+
+  right: -89px;
 }
 
 .programs__link {
@@ -187,6 +216,7 @@
   background-color: #ffffff;
   color: #316dc2;
   box-sizing: border-box;
+  width: 148px;
   font-size: 16px;
   line-height: 18px;
 }

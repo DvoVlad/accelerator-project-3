@@ -11,6 +11,18 @@ new Swiper('.programs__swiper', {
     disabledClass: 'training__slider-disabled'
   },
   breakpoints: {
+    320: {
+      slidesPerView: 1
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+      scrollbar: {
+        el: '.programs__swiper-scrollbar',
+        draggable: false,
+        dragSize: 326
+      },
+    },
     1440: {
       allowTouchMove: false
     }
