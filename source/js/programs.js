@@ -24,6 +24,13 @@ new Swiper('.programs__swiper', {
       },
     },
     1440: {
+      slidesPerView: 3,
+      spaceBetween: 32,
+      scrollbar: {
+        el: '.programs__swiper-scrollbar',
+        draggable: false,
+        dragSize: 394,
+      },
       allowTouchMove: false
     }
   }

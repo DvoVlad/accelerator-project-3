@@ -2,6 +2,11 @@
   padding-top: 50px;
   padding-bottom: 50px;
   background-color: #f0efe9;
+
+  @include media-tablet {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .programs__container {
@@ -14,6 +19,7 @@
     "link   link";
 
   @include media-tablet {
+    gap: 40px 0;
     grid-template-columns: 1fr auto;
     grid-template-areas:
       "title  link"
@@ -30,6 +36,11 @@
   grid-area: title;
   align-self: center;
   color: #316dc2;
+
+  @include media-tablet {
+    font-size: 34px;
+    line-height: 50px;
+  }
 }
 
 .programs__button-wrapper {
@@ -41,6 +52,10 @@
   padding-bottom: 4px;
   grid-area: buttons;
   justify-self: right;
+
+  @include media-tablet {
+    padding: 0;
+  }
 }
 
 .programs__buttom-prev,
@@ -51,8 +66,10 @@
   border: none;
   width: 22px;
   height: 22px;
+  border-radius: 50%;
   background-color: transparent;
   padding: 0;
+  cursor: pointer;
 
   &::before {
     content: " ";
@@ -62,17 +79,43 @@
     background-position: center center;
     background-repeat: no-repeat;
   }
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus {
+    opacity: 1;
+    background-color: #ffffff;
+  }
+
+  &:active {
+    opacity: 0.7;
+    background-color: #ffffff;
+  }
 }
 
 .programs__buttom-prev {
   &::before {
     background-image: url("/__spritemap#sprite-slider-prev-view");
   }
+
+  &:disabled {
+    &::before {
+      background-image: url("/__spritemap#sprite-slider-prev-disabled-view");
+    }
+  }
 }
 
 .programs__buttom-next {
   &::before {
     background-image: url("/__spritemap#sprite-slider-next-view");
+  }
+
+  &:disabled {
+    &::before {
+      background-image: url("/__spritemap#sprite-slider-next-disabled-view");
+    }
   }
 }
 
@@ -82,6 +125,10 @@
 
   @include media-tablet {
     width: 678px;
+  }
+
+  @include media-desktop {
+    width: 1240px;
   }
 }
 
@@ -117,8 +164,13 @@
   --swiper-scrollbar-top: 10px;
   --swiper-scrollbar-bg-color: rgba(49, 109, 194, 0.2);
   --swiper-scrollbar-drag-bg-color: #316dc2;
+  --swiper-scrollbar-size: 2px;
 
-  right: -89px;
+  right: -118px;
+
+  @include media-desktop {
+    right: -130px;
+  }
 }
 
 .programs__link {
@@ -130,6 +182,7 @@
   width: 205px;
   font-size: 12px;
   line-height: 12px;
+  letter-spacing: 0.24px;
   text-transform: uppercase;
   text-decoration: none;
   color: #316dc2;
@@ -185,6 +238,18 @@
       background-color: #316dc2;
     }
   }
+
+  @include media-tablet {
+    width: 234px;
+    letter-spacing: 0.28px;
+    font-size: 14px;
+    line-height: 14px;
+
+    &::after {
+      width: 46px;
+      height: 46px;
+    }
+  }
 }
 
 .program__slide-image {
@@ -204,21 +269,56 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+
+  @include media-tablet {
+    left: 20px;
+    right: 20px;
+  }
+
+  @include media-desktop {
+    right: 51px;
+  }
 }
 
 .programs__text-wrapper h3 {
+  position: relative;
   margin: 0;
   padding-top: 18px;
   padding-bottom: 6px;
   padding-left: 18px;
-  padding-right: 25px;
+  padding-right: 18px;
   border-radius: 12px 12px 0 0;
   background-color: #ffffff;
   color: #316dc2;
   box-sizing: border-box;
   width: 148px;
   font-size: 16px;
+  font-weight: 400;
   line-height: 18px;
+
+  &::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background-image: url("/__spritemap#sprite-bottom-left-angle-view");
+    background-repeat: no-repeat;
+    right: -18px;
+    bottom: 0;
+  }
+
+  @include media-tablet {
+    width: 173px;
+    font-size: 20px;
+    line-height: 14px;
+  }
+
+  @include media-desktop {
+    width: 194px;
+    font-size: 24px;
+    line-height: 17px;
+  }
 }
 
 .programs__text-wrapper p {
@@ -227,6 +327,17 @@
   font-size: 12px;
   line-height: 14px;
   width: 175px;
+
+  @include media-tablet {
+    font-size: 14px;
+    line-height: 20px;
+    width: 202px;
+  }
+
+  @include media-desktop {
+    line-height: 18px;
+    width: 239px;
+  }
 }
 
 .programs__item-link {
@@ -255,4 +366,12 @@
   padding-left: 18px;
   padding-right: 18px;
   border-radius: 0 12px 12px;
+
+  @include media-tablet {
+    width: 284px;
+  }
+
+  @include media-desktop {
+    width: 321px;
+  }
 }
