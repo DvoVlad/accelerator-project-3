@@ -271,12 +271,14 @@
   justify-content: flex-start;
 
   @include media-tablet {
+    bottom: 10px;
     left: 20px;
     right: 20px;
   }
 
   @include media-desktop {
     right: 51px;
+    bottom: 17px;
   }
 }
 
