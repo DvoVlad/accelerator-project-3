@@ -4,3 +4,4 @@ import './modal';
 import './programs';
 import './mask';
 import './news';
+import './faq';
