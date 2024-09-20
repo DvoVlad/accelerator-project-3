@@ -8,7 +8,6 @@ new Swiper('.programs__swiper', {
   navigation: {
     nextEl: '.programs__buttom-next',
     prevEl: '.programs__buttom-prev',
-    disabledClass: 'training__slider-disabled'
   },
   breakpoints: {
     320: {
@@ -19,7 +18,7 @@ new Swiper('.programs__swiper', {
       spaceBetween: 30,
       scrollbar: {
         el: '.programs__swiper-scrollbar',
-        draggable: false,
+        draggable: true,
         dragSize: 326
       },
     },
@@ -28,7 +27,7 @@ new Swiper('.programs__swiper', {
       spaceBetween: 32,
       scrollbar: {
         el: '.programs__swiper-scrollbar',
-        draggable: false,
+        draggable: true,
         dragSize: 394,
       },
       allowTouchMove: false

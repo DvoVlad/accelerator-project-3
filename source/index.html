@@ -207,7 +207,7 @@
                 <label class="about__label">
                   <span>Выберите город</span>
                   <select class="about__select" required name="city">
-                    <option value="" checked></option>
+                    <option value="" selected label="Не выбрано"></option>
                     <option value="Санкт-Петербург">Санкт-Петербург</option>
                   </select>
                 </label>
@@ -323,24 +323,24 @@
                     <img class="program__slide-image" width="290" height="400" src="./img/program/program-mini-3@1x.jpg" alt="Слайд 1" srcset="./img/program/program-mini-3@1x.jpg 1x,
                     ./img/program/program-mini-3@2x.jpg 2x">
                   </picture>
-                </div>
-                <div class="programs__text-wrapper">
-                  <h3>Учёба</h3>
-                  <div class="programs__content">
-                    <p>Получите образование и измените
-                      своё будущее.</p>
-                    <a class="programs__item-link" href="#"><span class="visually-hidden">Перейти в программу</span></a>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide programs__swiper-slide">
-                <div class="programs__picture-wrapper">
-                  <picture>
-                    <source media="(min-width: 1440px)" width="392" height="420" type="image/webp" srcset="./img/program/program-large-1@1x.webp 1x, ./img/program/program-large-1@2x.webp 2x">
-                    <source media="(min-width: 1440px)" width="392" height="420" type="image/jpg" srcset="./img/program/program-large-1@1x.jpg 1x,
-                    ./img/program/program-large-1@2x.jpg 2x">
-                    <source media="(min-width: 768px)" width="324" height="420" type="image/webp" srcset="./img/program/program-medium-1@1x.webp 1x, ./img/program/program-medium-1@2x.webp 2x">
-                    <source media="(min-width: 768px)" width="324" height="420" type="image/jpg" srcset="./img/program/program-medium-1@1x.jpg 1x,
+               </div>
+               <div class="programs__text-wrapper">
+                 <h3>Учёба</h3>
+                 <div class="programs__content">
+                   <p>Получите образование и измените
+                     своё будущее.</p>
+                   <a class="programs__item-link" href="#"><span class="visually-hidden">Перейти в программу</span></a>
+                 </div>
+               </div>
+             </div>
+             <div class="swiper-slide programs__swiper-slide">
+               <div class="programs__picture-wrapper">
+                 <picture>
+                   <source media="(min-width: 1440px)" width="392" height="420" type="image/webp" srcset="./img/program/program-large-1@1x.webp 1x, ./img/program/program-large-1@2x.webp 2x">
+                   <source media="(min-width: 1440px)" width="392" height="420" type="image/jpg" srcset="./img/program/program-large-1@1x.jpg 1x,
+                   ./img/program/program-large-1@2x.jpg 2x">
+                   <source media="(min-width: 768px)" width="324" height="420" type="image/webp" srcset="./img/program/program-medium-1@1x.webp 1x, ./img/program/program-medium-1@2x.webp 2x">
+                   <source media="(min-width: 768px)" width="324" height="420" type="image/jpg" srcset="./img/program/program-medium-1@1x.jpg 1x,
                     ./img/program/program-medium-1@2x.jpg 2x">
                     <source width="290" height="400" type="image/webp" srcset="./img/program/program-mini-1@1x.webp 1x,
                     ./img/program/program-mini-1@2x.webp 2x">
@@ -381,10 +381,10 @@
               <picture>
                 <source media="(min-width: 1440px)" width="498" height="363" type="image/webp" srcset="./img/grant/grant-large@1x.webp 1x, ./img/grant/grant-large@2x.webp 2x">
                 <source media="(min-width: 1440px)" width="498" height="363" type="image/png" srcset="./img/grant/grant-large@1x.png 1x,
-                ./img/grant/program-large@2x.png 2x">
+                ./img/grant/grant-large@2x.png 2x">
                 <source media="(min-width: 768px)" width="678" height="375" type="image/webp" srcset="./img/grant/grant-medium@1x.webp 1x, ./img/grant/grant-medium@2x.webp 2x">
                 <source media="(min-width: 768px)" width="678" height="375" type="image/png" srcset="./img/grant/grant-medium@1x.png 1x,
-                ./img/program/program-medium@2x.png 2x">
+                ./img/grant/grant-medium@2x.png 2x">
                 <source width="290" height="200" type="image/webp" srcset="./img/grant/grant-mini@1x.webp 1x,
                 ./img/grant/grant-mini@2x.webp 2x">
                 <img class="grant__image" width="290" height="200" src="./img/grant/grant-mini@1x.png" alt="Слайд 1" srcset="./img/grant/grant-mini@1x.png 1x,
@@ -412,7 +412,73 @@
         </div>
       </section>
     </div>
-    <div data-test="news">news</div>
+    <div data-test="news">
+      <section class="news">
+        <div class="container">
+          <h2 class="news__title">Новости и материалы</h2>
+        </div>
+        <div class="news__tabs-wrapper">
+          <div class="news__tabs-scroll">
+            <button class="news__tab news__tab--active" type="button">
+              Общее
+            </button>
+            <button class="news__tab" type="button">
+              Волонтёрство
+            </button>
+            <button class="news__tab" type="button">
+              Стажировки
+            </button>
+            <button class="news__tab" type="button">
+              Карьера
+            </button>
+            <button class="news__tab" type="button">
+              Путешествия
+            </button>
+          </div>
+        </div>
+        <div class="swiper news__swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper news__swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide news__swiper-slide">
+              <div class="news__picture-wrapper">
+                <picture>
+                  <source media="(min-width: 1440px)" width="286" height="400" type="image/webp" srcset="./img/news/news-large-1@1x.webp 1x, ./img/news/news-large-1@2x.webp 2x">
+                  <source media="(min-width: 1440px)" width="286" height="400" type="image/jpg" srcset="./img/news/news-large-1@1x.jpg 1x,
+                  ./img/news/news-large-1@2x.jpg 2x">
+                  <source media="(min-width: 768px)" width="324" height="350" type="image/webp" srcset="./img/news/news-medium-1@1x.webp 1x, ./img/news/news-medium-1@2x.webp 2x">
+                  <source media="(min-width: 768px)" width="324" height="350" type="image/jpg" srcset="./img/news/news-medium-1@1x.jpg 1x,
+                  ./img/news/news-medium-1@2x.jpg 2x">
+                  <source width="290" height="330" type="image/webp" srcset="./img/news/news-mini-1@1x.webp 1x,
+                  ./img/news/news-mini-1@2x.webp 2x">
+                  <img class="news__image" width="290" height="330" src="./img/news/news-mini-1@1x.png" alt="Интервью с участницей
+                  программы стажировки" srcset="./img/news/news-mini-1@1x.png 1x,
+                  ./img/news/news-mini-1@2x.png 2x">
+                </picture>
+              </div>
+            </div>
+            <div class="swiper-slide news__swiper-slide">
+              <div class="news__picture-wrapper">
+                <picture>
+                  <source media="(min-width: 1440px)" width="286" height="400" type="image/webp" srcset="./img/news/news-large-2@1x.webp 1x, ./img/news/news-large-2@2x.webp 2x">
+                  <source media="(min-width: 1440px)" width="286" height="400" type="image/jpg" srcset="./img/news/news-large-2@1x.jpg 1x,
+                  ./img/news/news-large-2@2x.jpg 2x">
+                  <source media="(min-width: 768px)" width="324" height="350" type="image/webp" srcset="./img/news/news-medium-2@1x.webp 1x, ./img/news/news-medium-2@2x.webp 2x">
+                  <source media="(min-width: 768px)" width="324" height="350" type="image/jpg" srcset="./img/news/news-medium-2@1x.jpg 1x,
+                  ./img/news/news-medium-2@2x.jpg 2x">
+                  <source width="290" height="240" type="image/webp" srcset="./img/news/news-mini-2@1x.webp 1x,
+                  ./img/news/news-mini-2@2x.webp 2x">
+                  <img class="news__image" width="290" height="240" src="./img/news/news-mini-2@1x.jpg" alt="Путешествуем по миру" srcset="./img/news/news-mini-2@1x.jpg 1x,
+                  ./img/news/news-mini-2@2x.jpg 2x">
+                </picture>
+              </div>
+            </div>
+            <div class="swiper-slide news__swiper-slide">Slide 3</div>
+            <div class="swiper-slide news__swiper-slide">Slide 4</div>
+          </div>
+        </div>
+      </section>
+    </div>
     <div data-test="FAQ">FAQ</div>
     <div data-test="reviews">reviews</div>
     <div data-test="contacts">contacts</div>

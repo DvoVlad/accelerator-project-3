@@ -19,6 +19,7 @@
     "link   link";
 
   @include media-tablet {
+    overflow: hidden;
     gap: 40px 0;
     grid-template-columns: 1fr auto;
     grid-template-areas:
@@ -119,16 +120,18 @@
   }
 }
 
-.programs__swiper {
+.swiper.programs__swiper {
   width: 290px;
   grid-area: slider;
 
   @include media-tablet {
     width: 678px;
+    overflow: visible;
   }
 
   @include media-desktop {
     width: 1240px;
+    overflow: hidden;
   }
 }
 
