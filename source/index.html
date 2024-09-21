@@ -542,7 +542,115 @@
         </div>
       </section>
     </div>
-    <div data-test="reviews">reviews</div>
+    <div data-test="reviews">
+      <section class="reviews">
+        <div class="container reviews__container">
+          <h2 class="reviews__title">Отзывы</h2>
+          <div class="reviews__button-wrapper">
+            <button class="reviews__buttom-prev" type="button"><span class="visually-hidden">Кнопка назад</span></button>
+            <button class="reviews__buttom-next" type="button"><span class="visually-hidden">Кнопка вперед</span></button>
+          </div>
+          <div class="swiper reviews__swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide reviews__swiper-slide">
+                <div class="reviews__picture-wrapper">
+                  <picture>
+                    <source media="(min-width: 768px)" width="90" height="90" type="image/webp" srcset="./img/reviews/reviews-medium-1@1x.webp 1x, ./img/reviews/reviews-medium-1@2x.webp 2x">
+                    <source media="(min-width: 768px)" width="90" height="90" type="image/jpg" srcset="./img/reviews/reviews-medium-1@1x.jpg 1x,
+                    ./img/reviews/reviews-medium-1@2x.jpg 2x">
+                    <source width="60" height="60" type="image/webp" srcset="./img/reviews/reviews-mini-1@1x.webp 1x,
+                    ./img/reviews/reviews-mini-1@2x.webp 2x">
+                    <img class="reviews__image" width="60" height="60" src="./img/reviews/reviews-mini-1@1x.jpg" alt="Путешествуем по миру" srcset="./img/reviews/reviews-mini-1@1x.jpg 1x,
+                    ./img/reviews/reviews-mini-1@2x.jpg 2x">
+                  </picture>
+                  <p class="reviews__name">Лола Алекс</p>
+                </div>
+                <div class="reviews__data-wrapper">
+                  <div class="reviews__data">
+                    <p class="reviews__label-title">
+                      Программа
+                    </p>
+                    <p class="reviews__label-data">
+                      Masa Art Challenge
+                    </p>
+                  </div>
+                  <div class="reviews__data">
+                    <p class="reviews__label-title">
+                      Дата
+                    </p>
+                    <p class="reviews__label-data">
+                      Осень 2022
+                    </p>
+                  </div>
+                </div>
+                <p class="reviews__main-text">Я могу с уверенностью сказать,
+                  что это был один из самых
+                  незабываемых опытов в жизни!</p>
+                <div class="reviews__text-wrapper">
+                  <p>Я рекомендую программу
+                    «Стажировка» всем студентам,
+                    желающим получить незабываемые
+                    впечатления. Сочетание
+                    путешествий, общения и значимой
+                    работы действительно отличает
+                    её от других программ, и я чувствую
+                    огромную благодарность
+                    за предоставленную
+                    мне возможность.</p>
+                </div>
+              </div>
+              <div class="swiper-slide reviews__swiper-slide">
+                <div class="reviews__picture-wrapper">
+                  <picture>
+                    <source media="(min-width: 768px)" width="90" height="90" type="image/webp" srcset="./img/reviews/reviews-medium-2@1x.webp 1x, ./img/reviews/reviews-medium-2@2x.webp 2x">
+                    <source media="(min-width: 768px)" width="90" height="90" type="image/jpg" srcset="./img/reviews/reviews-medium-2@1x.jpg 1x,
+                    ./img/reviews/reviews-medium-2@2x.jpg 2x">
+                    <source width="60" height="60" type="image/webp" srcset="./img/reviews/reviews-mini-2@1x.webp 1x,
+                    ./img/reviews/reviews-mini-2@2x.webp 2x">
+                    <img class="reviews__image" width="60" height="60" src="./img/reviews/reviews-mini-2@1x.jpg" alt="Путешествуем по миру" srcset="./img/reviews/reviews-mini-2@1x.jpg 1x,
+                    ./img/reviews/reviews-mini-2@2x.jpg 2x">
+                  </picture>
+                  <p class="reviews__name">Давид Иванов</p>
+                </div>
+                <div class="reviews__data-wrapper">
+                  <div class="reviews__data">
+                    <p class="reviews__label-title">
+                      Программа
+                    </p>
+                    <p class="reviews__label-data">
+                      Volunteer Chance
+                    </p>
+                  </div>
+                  <div class="reviews__data">
+                    <p class="reviews__label-title">
+                      Дата
+                    </p>
+                    <p class="reviews__label-data">
+                      Лето 2022
+                    </p>
+                  </div>
+                </div>
+                <p class="reviews__main-text">Благодаря опыту стажировки я узнал
+                  так много нового о себе и об окружающем
+                  мире.</p>
+                <div class="reviews__text-wrapper">
+                  <p>Каждый день был возможностью оказать ощутимое влияние
+                    на жизнь других людей. Я бы очень рекомендовал
+                    эту волонтёрскую программу всем, кто ищет значимый
+                    и незабываемый опыт. Организация была на высшем уровне.
+                    Для меня было честью быть частью такой удивительной
+                    инициативы.</p>
+                </div>
+              </div>
+              <div class="swiper-slide reviews__swiper-slide">Slide 3</div>
+            </div>
+          </div>
+          <div class="reviews__scrollbar-wrapper">
+            <div class="swiper-scrollbar reviews__swiper-scrollbar"></div>
+          </div>
+        </div>
+      </section>
+    </div>
     <div data-test="contacts">contacts</div>
     <div data-test="form">form</div>
     <div data-test="footer">footer</div>
