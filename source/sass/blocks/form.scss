@@ -1,0 +1,135 @@
+.form {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f0efe9;
+}
+
+.form__container {
+  min-height: 753px;
+  width: 100%;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image:
+    image-set(
+      url("../../img/form/background-mini@1x.jpg") 1x,
+      url("../../img/form/background-mini@2x.jpg") 2x
+    );
+  padding: 43px 10px;
+}
+
+.form__title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.form__send-form {
+  background-color: #316dc2;
+  width: 300px;
+  margin: 0 auto;
+  border-radius: 16px;
+  padding: 15px;
+  padding-bottom: 27px;
+  box-sizing: border-box;
+}
+
+.form__description {
+  color: #f0efe9;
+  margin-bottom: 20px;
+}
+
+.form__label {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.form__label span {
+  font-size: 12px;
+  line-height: 14px;
+  color: #f0efe9;
+  opacity: 0.8;
+}
+
+.form__input {
+  display: block;
+  width: 100%;
+  padding: 16px 25px;
+  box-sizing: border-box;
+  margin-top: 12px;
+  height: 50px;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  opacity: 0.3;
+  font-family: inherit;
+  background-color: transparent;
+
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: 1;
+  }
+}
+
+.form__text-area {
+  width: 100%;
+  height: 94px;
+  box-sizing: border-box;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  opacity: 0.3;
+  margin-top: 12px;
+}
+
+.form__select {
+  display: block;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding: 13px 20px;
+  width: 260px;
+  height: 44px;
+  background-color: transparent;
+  appearance: none;
+  margin-top: 12px;
+  background-image: url("/__spritemap#sprite-arrow-select-white-view");
+  background-repeat: no-repeat;
+  background-position: center right 20px;
+  background-size: 16px 16px;
+  font-family: inherit;
+
+  &:focus,
+  &:active {
+    background-image: url("/__spritemap#sprite-arrow-select-focus-white-view");
+  }
+}
+
+.form__checkbox-label {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+
+  &::before {
+    content: " ";
+    display: block;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ffffff;
+    border-radius: 2px;
+    opacity: 0.7;
+  }
+}
+
+.form__checkbox-label span {
+  display: block;
+  font-size: 12px;
+  line-height: 14px;
+  color: #ffffff;
+  opacity: 0.9;
+  width: 230px;
+}
