@@ -14,7 +14,7 @@ new Swiper('.reviews__swiper', {
       slidesPerView: 1
     },
     768: {
-      slidesPerView: 2,
+      slidesPerView: 'auto',
       spaceBetween: 30,
       scrollbar: {
         el: '.reviews__swiper-scrollbar',
