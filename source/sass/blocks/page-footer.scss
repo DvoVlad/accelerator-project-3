@@ -1,0 +1,127 @@
+.page-footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f0efe9;
+}
+
+.page-footer__logo-wrapper img {
+  display: block;
+  margin: 0 auto;
+}
+
+.page-footer__logo-wrapper {
+  margin-bottom: 20px;
+}
+
+.page-footer__menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  gap: 20px 30px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.page-footer__link {
+  color: #484848;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.page-footer__information {
+  text-align: center;
+}
+
+.page-footer__confident {
+  color: #484848;
+  font-size: 12px;
+  line-height: 14px;
+  text-underline-offset: 2px;
+}
+
+.page-footer__copyright {
+  margin-top: 10px;
+  color: #484848;
+  opacity: 0.6;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.page-footer__social-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  margin-top: 15px;
+  margin-bottom: 0;
+  padding: 0;
+  gap: 10px;
+}
+
+.page-footer__social-link {
+  display: flex;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #316dc2;
+  justify-content: center;
+  align-items: center;
+
+  &::before {
+    content: " ";
+    display: block;
+    mask-repeat: no-repeat;
+    mask-position: center center;
+    background-color: #ffffff;
+  }
+
+  &:hover {
+    &::before {
+      opacity: 0.7;
+    }
+  }
+
+  &:focus-visible {
+    background-color: #ffffff;
+
+    &::before {
+      background-color: #316dc2;
+    }
+  }
+
+  &:active {
+    background-color: #275699;
+
+    &::before {
+      background-color: #ffffff;
+      opacity: 1;
+    }
+  }
+}
+
+.page-footer__social-link--vk {
+  &::before {
+    mask-image: url("/__spritemap#sprite-vk-view");
+    width: 12px;
+    height: 6px;
+  }
+}
+
+.page-footer__social-link--odn {
+  &::before {
+    mask-image: url("/__spritemap#sprite-odn-view");
+    width: 7px;
+    height: 12px;
+  }
+}
+
+.page-footer__social-link--reddit {
+  &::before {
+    mask-image: url("/__spritemap#sprite-reddit-view");
+    width: 11px;
+    height: 11px;
+  }
+}
