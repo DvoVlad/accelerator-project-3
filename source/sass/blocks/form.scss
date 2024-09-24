@@ -120,8 +120,48 @@
     width: 18px;
     height: 18px;
     border: 1px solid #ffffff;
+    background-color: #ffffff;
     border-radius: 2px;
-    opacity: 0.7;
+    opacity: 1;
+  }
+}
+
+.form__checkbox-label:hover,
+.form__checkbox-label:focus {
+  &::before {
+    opacity: 1;
+  }
+}
+
+.form__checkbox-label:has(input:checked) {
+  &::before {
+    background-image: url("/__spritemap#sprite-blue-mark-view");
+    background-size: 8px 6px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #ffffff;
+    opacity: 1;
+  }
+}
+
+.form__checkbox-label:hover:has(input:checked),
+.form__checkbox-label:focus:has(input:checked) {
+  &::before {
+    background-color: #316dc2;
+    background-image: url("/__spritemap#sprite-white-mark-view");
+  }
+}
+
+.form__checkbox-label:has(input:disabled) {
+  &::before {
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.form__checkbox-label:has(input:disabled:checked) {
+  &::before {
+    border: 1px solid rgba(169, 175, 183, 1);
+    background-color: rgba(169, 175, 183, 1);
   }
 }
 
@@ -132,4 +172,85 @@
   color: #ffffff;
   opacity: 0.9;
   width: 230px;
+}
+
+.form__submit {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+  width: 260px;
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 30px;
+  text-transform: uppercase;
+  padding-left: 30px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-right: 0;
+  box-sizing: border-box;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.24px;
+  font-family: inherit;
+  margin-top: 20px;
+  cursor: pointer;
+
+  &::after {
+    content: " ";
+    display: block;
+    width: 34px;
+    height: 34px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    background-image: url("/__spritemap#sprite-link-arrow-bold-blue-view");
+    background-size: 8px 8px;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  &:hover {
+    background-color: #ffffff;
+    color: #316dc2;
+
+    &::after {
+      background-color: #316dc2;
+      background-image: url("/__spritemap#sprite-link-arrow-hover-white-view");
+    }
+  }
+
+  &:focus {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+
+    &::after {
+      background-color: #ffffff;
+      background-image: url("/__spritemap#sprite-link-arrow-focus-blue-view");
+    }
+  }
+
+  &:active {
+    &::after {
+      background-color: #316dc2;
+      background-image: url("/__spritemap#sprite-link-arrow-active-white-view");
+    }
+  }
+
+  &:disabled {
+    border: 1px solid #a9afb7;
+  }
+}
+
+.form__submit span {
+  display: block;
+  width: 160px;
+}
+
+.form__submit:active span {
+  opacity: 0.7;
+}
+
+.form__submit:disabled span {
+  color: #a9afb7;
 }
