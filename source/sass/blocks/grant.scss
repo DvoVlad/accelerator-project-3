@@ -118,7 +118,7 @@
   border-radius: 16px;
   margin-bottom: 15px;
   counter-increment: item;
-  color: #ffffff;
+  color: #f0efe9;
   font-size: 14px;
   line-height: 20px;
 
@@ -150,7 +150,17 @@
 
   @include media-desktop {
     margin-bottom: 23px;
-    padding: 31px 26px;
+    padding: 30px 25px;
+    line-height: 26px;
+
+    &::before {
+      width: 42px;
+      height: 42px;
+      font-size: 22px;
+      line-height: 22px;
+      left: -21px;
+      top: -15px;
+    }
   }
 }
 
