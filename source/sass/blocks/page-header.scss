@@ -8,6 +8,18 @@
   }
 }
 
+.page-header__logo-wrapper {
+  padding: 1px 0;
+
+  @include media-tablet {
+    padding: 2px 0;
+  }
+}
+
+.page-header__logo-wrapper img {
+  display: block;
+}
+
 .page-header__navigation {
   display: none;
 }
@@ -38,7 +50,7 @@
 
 .page-header__button-field {
   width: 136px;
-  height: 52px;
+  height: 54px;
   box-sizing: border-box;
   border: 1px solid #316dc2;
   background-color: #ffffff;
@@ -56,6 +68,10 @@
 
   @include media-desktop {
     right: 100px;
+  }
+
+  @include media-desktop {
+    height: 56px;
   }
 }
 
@@ -118,7 +134,7 @@
     mask-repeat: no-repeat;
     background-color: #ffffff;
     display: block;
-    width: 20px;
+    width: 16px;
     height: 20px;
   }
 }
