@@ -42,6 +42,11 @@
     font-size: 34px;
     line-height: 50px;
   }
+
+  @include media-desktop {
+    padding: 5px 0;
+    font-size: 50px;
+  }
 }
 
 .programs__button-wrapper {
@@ -56,6 +61,8 @@
 
   @include media-tablet {
     padding: 0;
+    gap: 10px;
+    width: 54px;
   }
 }
 
@@ -183,6 +190,7 @@
   gap: 30px;
   grid-area: link;
   width: 205px;
+  font-weight: 500;
   font-size: 12px;
   line-height: 12px;
   letter-spacing: 0.24px;
@@ -192,7 +200,7 @@
   border: 1px solid #316dc2;
   padding-top: 4px;
   padding-bottom: 4px;
-  padding-left: 31px;
+  padding-left: 30px;
   border-radius: 44px;
   box-sizing: border-box;
 
@@ -203,7 +211,7 @@
     height: 34px;
     background-color: #316dc2;
     background-image: url("/__spritemap#sprite-link-arrow-bold-view");
-    background-size: 10px 10px;
+    background-size: 8px 8px;
     background-position: center center;
     background-repeat: no-repeat;
     border-radius: 50%;
@@ -252,6 +260,11 @@
       width: 46px;
       height: 46px;
     }
+  }
+
+  @include media-desktop {
+    align-self: center;
+    letter-spacing: 0.28px;
   }
 }
 
@@ -378,5 +391,7 @@
 
   @include media-desktop {
     width: 321px;
+    min-height: 82px;
+    align-items: center;
   }
 }
