@@ -2,6 +2,22 @@
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: #f0efe9;
+
+  @include media-desktop {
+    padding-top: 60px;
+  }
+}
+
+.page-footer__container {
+  @include media-tablet {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px 0;
+  }
+
+  @include media-desktop {
+    gap: 26px 0;
+  }
 }
 
 .page-footer__logo-wrapper img {
@@ -11,6 +27,10 @@
 
 .page-footer__logo-wrapper {
   margin-bottom: 20px;
+
+  @include media-tablet {
+    margin-bottom: 0;
+  }
 }
 
 .page-footer__menu {
@@ -22,6 +42,22 @@
   gap: 20px 30px;
   margin-top: 0;
   margin-bottom: 20px;
+
+  @include media-tablet {
+    margin-bottom: 0;
+    gap: 15px;
+    justify-content: flex-start;
+    margin-left: auto;
+    align-self: center;
+    max-width: 528px;
+  }
+
+  @include media-desktop {
+    margin-left: 52px;
+    margin-right: 385px;
+    gap: 30px;
+    max-width: 603px;
+  }
 }
 
 .page-footer__link {
@@ -29,25 +65,69 @@
   font-size: 14px;
   line-height: 20px;
   text-decoration: none;
+
+  @include media-tablet {
+    font-size: 16px;
+  }
+
+  @include media-desktop {
+    line-height: 17px;
+    padding-left: 0.21px;
+    padding-right: 0.22px;
+  }
 }
 
 .page-footer__information {
   text-align: center;
+
+  @include media-tablet {
+    text-align: left;
+  }
+
+  @include media-desktop {
+    order: 1;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .page-footer__confident {
+  display: block;
   color: #484848;
   font-size: 12px;
   line-height: 14px;
   text-underline-offset: 2px;
+
+  @include media-tablet {
+    line-height: 12px;
+  }
+
+  @include media-desktop {
+    font-size: 14px;
+    line-height: 18px;
+    order: 1;
+  }
 }
 
 .page-footer__copyright {
   margin-top: 10px;
+  margin-bottom: 0;
   color: #484848;
   opacity: 0.6;
   font-size: 12px;
   line-height: 14px;
+
+  @include media-tablet {
+    line-height: 12px;
+  }
+
+  @include media-desktop {
+    opacity: 1;
+    margin: 0;
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
 
 .page-footer__social-list {
@@ -59,6 +139,20 @@
   margin-bottom: 0;
   padding: 0;
   gap: 10px;
+
+  @include media-tablet {
+    margin-top: 0;
+    margin-left: auto;
+    justify-content: start;
+    max-width: 128px;
+  }
+
+  @include media-desktop {
+    align-self: center;
+    margin-left: 0;
+    gap: 20px;
+    max-width: 148px;
+  }
 }
 
 .page-footer__social-link {
@@ -100,6 +194,11 @@
       opacity: 1;
     }
   }
+
+  @include media-tablet {
+    width: 36px;
+    height: 36px;
+  }
 }
 
 .page-footer__social-link--vk {
@@ -107,6 +206,13 @@
     mask-image: url("/__spritemap#sprite-vk-view");
     width: 12px;
     height: 6px;
+  }
+
+  @include media-tablet {
+    &::before {
+      width: 16px;
+      height: 9px;
+    }
   }
 }
 
@@ -116,6 +222,13 @@
     width: 7px;
     height: 12px;
   }
+
+  @include media-tablet {
+    &::before {
+      width: 9px;
+      height: 16px;
+    }
+  }
 }
 
 .page-footer__social-link--reddit {
@@ -123,5 +236,12 @@
     mask-image: url("/__spritemap#sprite-reddit-view");
     width: 11px;
     height: 11px;
+  }
+
+  @include media-tablet {
+    &::before {
+      width: 15px;
+      height: 15px;
+    }
   }
 }
