@@ -40,6 +40,8 @@
   @include media-desktop {
     display: grid;
     grid-template-columns: 1fr 604px;
+    padding-bottom: 40px;
+    align-items: start;
   }
 }
 
@@ -52,6 +54,7 @@
     display: grid;
     grid-template-columns: 401px 132px 104px;
     gap: 0 20px;
+    align-items: start;
   }
 
   @include media-desktop {
@@ -62,6 +65,10 @@
 
 .contacts__item {
   margin-bottom: 20px;
+
+  @include media-tablet {
+    margin-bottom: 0;
+  }
 }
 
 .contacts__item:last-child {
@@ -72,6 +79,7 @@
   color: #f0efe9;
   margin-top: 0;
   margin-bottom: 15px;
+  font-weight: 400;
   font-size: 12px;
   line-height: 12px;
   letter-spacing: 0.12px;
@@ -83,8 +91,7 @@
   }
 }
 
-.contacts__item address,
-.contacts__item a {
+.contacts__item address {
   font-style: normal;
   font-size: 14px;
   line-height: 20px;
@@ -97,6 +104,23 @@
 
   @include media-desktop {
     line-height: 26px;
+  }
+}
+
+.contacts__item a {
+  display: block;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-decoration: none;
+
+  @include media-tablet {
+    font-size: 16px;
+  }
+
+  @include media-desktop {
+    line-height: 17px;
   }
 }
 
