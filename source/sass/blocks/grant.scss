@@ -73,7 +73,7 @@
   color: #ffffff;
   font-size: 18px;
   line-height: 22px;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 
   @include media-tablet {
     width: auto;
@@ -107,17 +107,9 @@
   }
 }
 
-.grant__item:first-child {
-  margin-top: 5px;
-
-  @include media-tablet {
-    margin-top: 0;
-  }
-}
-
 .grant__item {
   position: relative;
-  padding: 25px 26px;
+  padding: 24px 25px;
   border: 1px solid #f0efe9;
   border-radius: 16px;
   margin-bottom: 15px;
