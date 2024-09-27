@@ -76,6 +76,18 @@
   margin-bottom: 0;
 }
 
+.faq__question br {
+  display: none;
+
+  @include media-tablet {
+    display: block;
+  }
+
+  @include media-desktop {
+    display: none;
+  }
+}
+
 .faq__question {
   margin: 0;
   color: #316dc2;
@@ -147,6 +159,10 @@
     background-position: center center;
     background-repeat: no-repeat;
     border: 1px solid transparent;
+    align-self: center;
+  }
+
+  @include media-tablet {
     align-self: start;
   }
 }
