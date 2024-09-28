@@ -80,6 +80,8 @@
 }
 
 .about__collumn h3 + p {
+  color: #484848;
+
   @include media-tablet {
     max-width: 498px;
   }
@@ -166,6 +168,7 @@
     line-height: 14px;
     padding-left: 30px;
     margin-top: 40px;
+    letter-spacing: 0.28px;
 
     &::after {
       width: 46px;
