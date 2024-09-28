@@ -176,13 +176,14 @@
 
   @include media-tablet {
     display: grid;
-    grid-template-columns: 1fr max-content;
+    grid-template-columns: 228px 229px;
     align-content: start;
     width: 560px;
     padding: 50px;
   }
 
   @include media-desktop {
+    grid-template-columns: 1fr max-content;
     width: auto;
     padding-top: 50px;
     padding-bottom: 50px;
