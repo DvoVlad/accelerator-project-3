@@ -25,7 +25,7 @@
       url("../../img/form/background-mini@1x.jpg") 1x,
       url("../../img/form/background-mini@2x.jpg") 2x
     );
-  padding: 43px 10px;
+  padding: 43px 10px 40px;
 
   @include media-tablet {
     width: 652px;
