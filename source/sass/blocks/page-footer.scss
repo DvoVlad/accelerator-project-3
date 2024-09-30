@@ -99,7 +99,7 @@
   color: #484848;
   font-size: 12px;
   line-height: 14px;
-  text-underline-offset: 2px;
+  text-underline-offset: 5px;
 
   @include media-tablet {
     line-height: 12px;
@@ -113,7 +113,7 @@
 }
 
 .page-footer__copyright {
-  margin-top: 10px;
+  margin-top: 13px;
   margin-bottom: 0;
   color: #484848;
   opacity: 0.6;
