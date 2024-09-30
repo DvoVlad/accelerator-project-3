@@ -52,12 +52,12 @@
   margin: 24px auto 0;
 }
 
-.swiper-slide.news__swiper-slide {
+.news__swiper .swiper-slide.news__swiper-slide {
   height: 330px;
   width: 290px;
 }
 
-.swiper-slide.news__swiper-slide:nth-child(even) {
+.news__swiper .swiper-slide.news__swiper-slide:nth-child(even) {
   height: 240px;
 }
 
