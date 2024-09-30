@@ -25,20 +25,20 @@
           </div>
           <nav class="page-header__navigation">
             <ul class="page-header__main-nav-list">
-              <li class="page-header__main-nav-item"><a class="page-header__main-nav-link" href="#">О проекте</a></li>
+              <li class="page-header__main-nav-item"><a class="page-header__main-nav-link" href="#about">О проекте</a></li>
               <li class="page-header__main-nav-item">
-                <a class="page-header__main-nav-link page-header__main-nav-link--has-subcategory" href="#">Программы</a>
+                <a class="page-header__main-nav-link page-header__main-nav-link--has-subcategory" href="#programs">Программы</a>
                 <ul class="page-header__second-nav-list">
-                  <li class="page-header__second-nav-item"><a class="page-header__second-nav-link" href="#">Стажировки</a></li>
-                  <li class="page-header__second-nav-item"><a class="page-header__second-nav-link" href="#">Волонтёрство</a></li>
-                  <li class="page-header__second-nav-item"><a class="page-header__second-nav-link" href="#">Учёба</a></li>
+                  <li class="page-header__second-nav-item"><a class="page-header__second-nav-link" href="#internship">Стажировки</a></li>
+                  <li class="page-header__second-nav-item"><a class="page-header__second-nav-link" href="#volunteering">Волонтёрство</a></li>
+                  <li class="page-header__second-nav-item"><a class="page-header__second-nav-link" href="#studies">Учёба</a></li>
                   <li class="page-header__second-nav-item"><a class="page-header__second-nav-link" href="#">Религия</a></li>
                 </ul>
               </li>
-              <li class="page-header__main-nav-item"><a class="page-header__main-nav-link" href="#">Как поехать</a></li>
-              <li class="page-header__main-nav-item"><a class="page-header__main-nav-link" href="#">Отзывы</a></li>
+              <li class="page-header__main-nav-item"><a class="page-header__main-nav-link" href="#grant">Как поехать</a></li>
+              <li class="page-header__main-nav-item"><a class="page-header__main-nav-link" href="#reviews">Отзывы</a></li>
               <li class="page-header__main-nav-item">
-                <a class="page-header__main-nav-link page-header__main-nav-link--has-subcategory" href="#">Новости</a>
+                <a class="page-header__main-nav-link page-header__main-nav-link--has-subcategory" href="#news">Новости</a>
                 <ul class="page-header__second-nav-list">
                   <li class="page-header__second-nav-item"><a class="page-header__second-nav-link" href="#">Волонтёрство</a></li>
                   <li class="page-header__second-nav-item"><a class="page-header__second-nav-link" href="#">Стажировки</a></li>
@@ -46,7 +46,7 @@
                   <li class="page-header__second-nav-item"><a class="page-header__second-nav-link" href="#">Путешествия</a></li>
                 </ul>
               </li>
-              <li class="page-header__main-nav-item"><a class="page-header__main-nav-link" href="#">Контакты</a></li>
+              <li class="page-header__main-nav-item"><a class="page-header__main-nav-link" href="#contacts">Контакты</a></li>
             </ul>
           </nav>
           <div class="page-header__button-field">
@@ -171,7 +171,7 @@
     </div>
     <main>
       <div data-test="about">
-        <section class="about">
+        <section class="about" id="about">
           <div class="container about__text-container">
             <div class="about__collumn">
               <h2 class="about__title">О проекте «Стажировка»</h2>
@@ -249,7 +249,7 @@
         </section>
       </div>
       <div data-test="programs">
-        <section class="programs">
+        <section class="programs" id="programs">
           <div class="container programs__container">
             <h2 class="programs__title">Программы</h2>
             <div class="programs__button-wrapper">
@@ -260,7 +260,7 @@
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper">
                 <!-- Slides -->
-                <div class="swiper-slide programs__swiper-slide">
+                <div class="swiper-slide programs__swiper-slide" id="internship">
                   <div class="programs__picture-wrapper">
                     <picture>
                       <source media="(min-width: 1440px)" width="392" height="420" type="image/webp" srcset="./img/program/program-large-1@1x.webp 1x, ./img/program/program-large-1@2x.webp 2x">
@@ -285,7 +285,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide programs__swiper-slide">
+                <div class="swiper-slide programs__swiper-slide" id="volunteering">
                   <div class="programs__picture-wrapper">
                     <picture>
                       <source media="(min-width: 1440px)" width="392" height="420" type="image/webp" srcset="./img/program/program-large-2@1x.webp 1x, ./img/program/program-large-2@2x.webp 2x">
@@ -309,7 +309,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="swiper-slide programs__swiper-slide">
+                <div class="swiper-slide programs__swiper-slide" id="studies">
                   <div class="programs__picture-wrapper">
                     <picture>
                       <source media="(min-width: 1440px)" width="392" height="420" type="image/webp" srcset="./img/program/program-large-3@1x.webp 1x, ./img/program/program-large-3@2x.webp 2x">
@@ -368,7 +368,7 @@
         </section>
       </div>
       <div data-test="grant">
-        <section class="grant">
+        <section class="grant" id="grant">
           <div class="container grant__container">
             <div class="grant__collumn">
               <h2 class="grant__title">Как поехать</h2>
@@ -412,7 +412,7 @@
         </section>
       </div>
       <div data-test="news">
-        <section class="news">
+        <section class="news" id="news">
           <div class="container">
             <h2 class="news__title">Новости и материалы</h2>
           </div>
@@ -542,7 +542,7 @@
         </section>
       </div>
       <div data-test="reviews">
-        <section class="reviews">
+        <section class="reviews" id="reviews">
           <div class="container reviews__container">
             <h2 class="reviews__title">Отзывы</h2>
             <div class="reviews__button-wrapper">
@@ -693,7 +693,7 @@
         </section>
       </div>
       <div data-test="contacts">
-        <section class="contacts">
+        <section class="contacts" id="contacts">
           <div class="container contacts__container">
             <div class="contacts__wrapper">
               <h2 class="contacts__title">Контакты</h2>
@@ -774,12 +774,12 @@
             <img  src="/__spritemap#sprite-logo-view" alt="Лого" height="52" width="52">
           </div>
           <ul class="page-footer__menu">
-            <li class="page-footer__item"><a class="page-footer__link" href="#">О проекте</a></li>
-            <li class="page-footer__item"><a class="page-footer__link" href="#">Программы</a></li>
-            <li class="page-footer__item"><a class="page-footer__link" href="#">Как поехать</a></li>
-            <li class="page-footer__item"><a class="page-footer__link" href="#">Отзывы</a></li>
-            <li class="page-footer__item"><a class="page-footer__link" href="#">Новости</a></li>
-            <li class="page-footer__item"><a class="page-footer__link" href="#">Контакты</a></li>
+            <li class="page-footer__item"><a class="page-footer__link" href="#about">О проекте</a></li>
+            <li class="page-footer__item"><a class="page-footer__link" href="#programs">Программы</a></li>
+            <li class="page-footer__item"><a class="page-footer__link" href="#grant">Как поехать</a></li>
+            <li class="page-footer__item"><a class="page-footer__link" href="#reviews">Отзывы</a></li>
+            <li class="page-footer__item"><a class="page-footer__link" href="#news">Новости</a></li>
+            <li class="page-footer__item"><a class="page-footer__link" href="#contacts">Контакты</a></li>
           </ul>
           <div class="page-footer__information">
             <a class="page-footer__confident" href="#">Политика конфиденциальности</a>
