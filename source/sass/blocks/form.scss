@@ -397,3 +397,9 @@
   border: 1px solid #ff5e66;
   color: rgba(255, 94, 102, 0.2);
 }
+
+.form__send-form--sended .form__checkbox-label:has(input:invalid) {
+  &::before {
+    border: 1px solid #ff5e66;
+  }
+}

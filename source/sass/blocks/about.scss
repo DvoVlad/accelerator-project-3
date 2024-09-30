@@ -543,7 +543,7 @@
 
 .about__modal-form--sended .about__checkbox-label:has(input:invalid) {
   &::before {
-    border: 1px solid rgba(255, 94, 102, 0.2);
+    border: 1px solid #ff5e66;
   }
 }
 

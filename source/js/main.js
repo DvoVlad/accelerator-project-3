@@ -6,3 +6,4 @@ import './mask';
 import './news';
 import './faq';
 import './reviews';
+import './form';
