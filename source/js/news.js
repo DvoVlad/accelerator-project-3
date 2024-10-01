@@ -34,8 +34,13 @@ new Swiper('.news__swiper', {
       },
     },
     768: {
-      slidesPerView: 4,
+      slidesPerView: 2,
+      slidesPerGroup: 2,
       spaceBetween: 30,
+      grid: {
+        rows: 2,
+        fill: 'collumn'
+      }
     },
     1440: {
       slidesPerView: 3,
@@ -45,7 +50,7 @@ new Swiper('.news__swiper', {
   },
   on: {
     afterInit: function() {
-      if(window.matchMedia('(max-width: 767px)')) {
+      if(window.matchMedia('(max-width: 767px)').matches) {
         const slidesOdd = document.querySelectorAll('.swiper-slide.news__swiper-slide:nth-child(odd)');
         const slidesEven = document.querySelectorAll('.swiper-slide.news__swiper-slide:nth-child(even)');
         slidesOdd.forEach((slide) => {

@@ -12,6 +12,12 @@
   text-align: center;
   margin-top: 0;
   margin-bottom: 24px;
+
+  @include media-tablet {
+    font-size: 34px;
+    line-height: 50px;
+    margin-bottom: 30px;
+  }
 }
 
 .news__tabs-wrapper {
@@ -19,12 +25,22 @@
   padding-left: 15px;
   box-sizing: border-box;
   margin: 0 auto;
+
+  @include media-tablet {
+    width: 674px;
+    padding: 0;
+  }
 }
 
 .news__tabs-scroll {
   overflow-x: scroll;
   display: flex;
   gap: 12px;
+
+  @include media-tablet {
+    overflow: visible;
+    gap: 10px;
+  }
 }
 
 .news__tab {
@@ -39,6 +55,13 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+
+  @include media-tablet {
+    padding: 14px 20px;
+    letter-spacing: 0.28px;
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .news__tab--active {
@@ -50,6 +73,11 @@
   width: 290px;
   height: 590px;
   margin: 24px auto 0;
+
+  @include media-tablet {
+    width: 678px;
+    height: 730px;
+  }
 }
 
 .news__swiper-slide {
@@ -69,11 +97,21 @@
 .swiper-slide.news__swiper-slide:nth-child(odd) {
   height: 330px;
   width: 290px;
+
+  @include media-tablet {
+    width: 324px;
+    height: 350px;
+  }
 }
 
 .swiper-slide.news__swiper-slide:nth-child(even) {
   height: 240px;
   width: 290px;
+
+  @include media-tablet {
+    width: 324px;
+    height: 350px;
+  }
 }
 
 .news__image {
