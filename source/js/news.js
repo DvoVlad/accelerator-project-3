@@ -2,6 +2,21 @@ import Swiper from 'swiper';
 import {Navigation, Grid, Pagination} from 'swiper/modules';
 import 'swiper/css/grid';
 
+const updateBullets = () => {
+  const activeBullet = document.querySelector('.news__pagination-wrapper .swiper-pagination-bullet-active');
+  const activeIndex = +activeBullet.innerHTML;
+  const bullets = document.querySelectorAll('.news__pagination-wrapper .swiper-pagination-bullet');
+  bullets.forEach((bullet) => {
+    if(activeIndex >= 1 && activeIndex < 4 && +bullet.innerHTML <= 4) {
+      bullet.style.display = 'block';
+    } else if(activeIndex >= 4 && (+bullet.innerHTML === activeIndex - 2 || +bullet.innerHTML === activeIndex - 1 || +bullet.innerHTML === activeIndex || +bullet.innerHTML === activeIndex + 1)) {
+      bullet.style.display = 'block';
+    } else {
+      bullet.style.display = 'none';
+    }
+  });
+};
+
 new Swiper('.news__swiper', {
   modules: [Navigation, Pagination, Grid],
   loop: false,
@@ -40,8 +55,10 @@ new Swiper('.news__swiper', {
           slide.style.height = '240px';
         });
       }
+      updateBullets();
     },
     slideChangeTransitionStart: function() {
+      updateBullets();
     }
   },
   pagination: {

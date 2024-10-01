@@ -208,6 +208,8 @@
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
+  height: 26px;
+  overflow: hidden;
 }
 
 .news__buttom-prev,
