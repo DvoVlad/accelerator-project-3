@@ -2,6 +2,11 @@
   padding-top: 50px;
   padding-bottom: 50px;
   background-color: #f0efe9;
+
+  @include media-desktop {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .news__title {
@@ -18,6 +23,11 @@
     line-height: 50px;
     margin-bottom: 30px;
   }
+
+  @include media-desktop {
+    font-size: 50px;
+    margin-bottom: 40px;
+  }
 }
 
 .news__tabs-wrapper {
@@ -30,6 +40,10 @@
     width: 674px;
     padding: 0;
   }
+
+  @include media-desktop {
+    width: 720px;
+  }
 }
 
 .news__tabs-scroll {
@@ -40,6 +54,10 @@
   @include media-tablet {
     overflow: visible;
     gap: 10px;
+  }
+
+  @include media-desktop {
+    gap: 30px;
   }
 }
 
@@ -62,11 +80,22 @@
     font-size: 14px;
     line-height: 14px;
   }
+
+  @include media-desktop {
+    padding: 14px 2px;
+    box-sizing: border-box;
+    width: 120px;
+    text-align: center;
+  }
 }
 
 .news__tab--active {
   border: 2px solid #316dc2;
   pointer-events: none;
+
+  @include media-desktop {
+    padding: 14px 33px;
+  }
 }
 
 .news__swiper {
@@ -77,6 +106,13 @@
   @include media-tablet {
     width: 678px;
     height: 730px;
+    margin: 30px auto 0;
+  }
+
+  @include media-desktop {
+    width: 1240px;
+    height: auto;
+    margin: 40px auto 0;
   }
 }
 
@@ -102,6 +138,11 @@
     width: 324px;
     height: 350px;
   }
+
+  @include media-desktop {
+    width: 286px;
+    height: auto;
+  }
 }
 
 .swiper-slide.news__swiper-slide:nth-child(even) {
@@ -111,6 +152,24 @@
   @include media-tablet {
     width: 324px;
     height: 350px;
+  }
+
+  @include media-desktop {
+    width: 286px;
+    height: auto;
+  }
+}
+
+.swiper-slide.news__swiper-slide:nth-child(3n + 1),
+.swiper-slide.news__swiper-slide:nth-child(3n + 1) img {
+  @include media-desktop {
+    width: 604px;
+  }
+}
+
+.swiper-slide.news__swiper-slide:nth-child(3n + 1) img {
+  @include media-desktop {
+    object-fit: cover;
   }
 }
 
@@ -256,6 +315,7 @@
 
 .news__navigation {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   margin: 24px auto 0;
   width: 290px;
@@ -263,6 +323,11 @@
   @include media-tablet {
     width: 678px;
     margin: 30px auto 0;
+  }
+
+  @include media-desktop {
+    width: 1240px;
+    margin: 40px auto 0;
   }
 }
 

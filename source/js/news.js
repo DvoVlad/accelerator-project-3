@@ -43,9 +43,14 @@ new Swiper('.news__swiper', {
       }
     },
     1440: {
-      slidesPerView: 3,
+      slidesPerView: 'auto',
+      slidesPerGroup: 3,
       spaceBetween: 32,
-      allowTouchMove: false
+      allowTouchMove: false,
+      grid: {
+        rows: 1,
+        fill: 'row'
+      }
     }
   },
   on: {
@@ -63,6 +68,9 @@ new Swiper('.news__swiper', {
       updateBullets();
     },
     slideChangeTransitionStart: function() {
+      updateBullets();
+    },
+    resize: function() {
       updateBullets();
     }
   },
