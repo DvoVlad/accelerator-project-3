@@ -316,7 +316,9 @@
 }
 
 .swiper-slide.news__swiper-slide:nth-child(3n + 1) .news__description-wrapper {
-  width: 468px;
+  @include media-desktop {
+    width: 468px;
+  }
 }
 
 .news__description-wrapper p {
