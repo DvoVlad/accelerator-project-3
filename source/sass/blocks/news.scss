@@ -263,6 +263,9 @@
 .swiper-slide.news__swiper-slide:nth-child(3n + 1) .news__item-title {
   @include media-desktop {
     width: 426px;
+    padding-right: 18px;
+    padding-top: 18px;
+    padding-bottom: 6px;
   }
 }
 
@@ -339,6 +342,10 @@
   width: 404px;
 }
 
+.swiper-slide.news__swiper-slide:nth-child(3) .news__description-wrapper {
+  width: 244px;
+}
+
 .news__navigation {
   display: flex;
   align-items: center;
@@ -366,7 +373,9 @@
   overflow: hidden;
 
   @include media-desktop {
+    min-width: 188px;
     height: 32px;
+    gap: 20px;
   }
 }
 
