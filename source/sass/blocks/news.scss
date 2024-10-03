@@ -339,11 +339,15 @@
 }
 
 .swiper-slide.news__swiper-slide:nth-child(3n + 1) p:not(.news__date) {
-  width: 404px;
+  @include media-desktop {
+    width: 404px;
+  }
 }
 
 .swiper-slide.news__swiper-slide:nth-child(3) .news__description-wrapper {
-  width: 244px;
+  @include media-desktop {
+    width: 244px;
+  }
 }
 
 .news__navigation {
