@@ -85,7 +85,7 @@
   @include media-desktop {
     padding: 14px 2px;
     box-sizing: border-box;
-    width: 120px;
+    min-width: 120px;
     text-align: center;
   }
 }
@@ -300,8 +300,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-top: 13px; // 12px
-  padding-bottom: 9px; // 10px
+  padding-top: 13px;
+  padding-bottom: 9px;
   padding-right: 10px;
   background-color: #f0efe9;
   width: 263px;
