@@ -11,6 +11,8 @@ const updateBullets = () => {
       bullet.style.display = 'block';
     } else if(activeIndex >= 4 && (+bullet.innerHTML === activeIndex - 2 || +bullet.innerHTML === activeIndex - 1 || +bullet.innerHTML === activeIndex || +bullet.innerHTML === activeIndex + 1)) {
       bullet.style.display = 'block';
+    } else if (bullets.length === activeIndex && +bullet.innerHTML === activeIndex - 3) {
+      bullet.style.display = 'block';
     } else {
       bullet.style.display = 'none';
     }
