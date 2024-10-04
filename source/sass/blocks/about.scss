@@ -661,7 +661,7 @@
 }
 
 .about__modal-form--sended .about__input:invalid,
-.about__modal-form--sended .about__select {
+.about__modal-form--sended .about__select:invalid {
   border: 1px solid #ff5e66;
   color: rgba(255, 94, 102, 0.2);
 }
