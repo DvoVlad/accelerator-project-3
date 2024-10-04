@@ -192,19 +192,19 @@
                 <form class="about__modal-form" method="post" action="https://echo.htmlacademy.ru">
                   <label class="about__label">
                     <span>Имя</span>
-                    <input class="about__input about__input--name" type="text" name="name" required value="">
+                    <input class="about__input about__input--name" type="text" name="name" required>
                   </label>
                   <label class="about__label">
                     <span>Телефон</span>
-                    <input class="about__input" type="text" name="phone" required data-mask="+7 (000) 000-00-00" pattern="[+]7\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" value="">
+                    <input class="about__input" type="text" name="phone" required data-mask="+7 (000) 000-00-00" pattern="[+]7\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}">
                   </label>
-                  <label class="about__label">
+                  <div class="about__label">
                     <span>Выберите город</span>
                     <select class="about__select" required name="city">
                       <option value="" selected label=" "></option>
                       <option value="Санкт-Петербург">Санкт-Петербург</option>
                     </select>
-                  </label>
+                  </div>
                   <label class="about__checkbox-label">
                     <input class="visually-hidden" required name="confirm" type="checkbox" value="Y">
                     <span>Я согласен на обработку моих персональных данных</span>
@@ -925,8 +925,7 @@
               </div>
               <div class="faq__accordeon" data-faq="4">
                 <button class="faq__question-wrapper" type="button" data-open="4">
-                  <span class="faq__question">Признаётся ли учёба
-                    в рамках проекта<br> для дальнейшего обучения?</span>
+                  <span class="faq__question">Признаётся ли учёба в рамках проекта<br> для дальнейшего обучения?</span>
                 </button>
                 <div class="faq__answer">
                   <p>Студенты, участвующие в проекте, могут использовать полученные знания и навыки в своей будущей профессиональной деятельности или продолжить обучение в высших учебных заведениях. Кроме того, многие университеты и колледжи предоставляют кредиты за участие в программе обмена студентами.</p>
@@ -1145,23 +1144,23 @@
                 остались вопросы — мы на них ответим!</p>
               <label class="form__label">
                 <span>Имя</span>
-                <input class="form__input form__input--name" type="text" name="name" required="" value="">
+                <input class="form__input form__input--name" type="text" name="name" required="">
               </label>
               <label class="form__label">
                 <span>Телефон</span>
-                <input class="form__input" type="text" name="phone" required="" data-mask="+7 (000) 000-00-00" title="Введите корректный номер" pattern="[+]7\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" value="">
+                <input class="form__input" type="text" name="phone" required="" data-mask="+7 (000) 000-00-00" title="Введите корректный номер" pattern="[+]7\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}">
               </label>
-              <label class="form__label">
+              <div class="form__label">
                 <span>Ваше сообщение</span>
                 <textarea class="form__text-area" name="text"></textarea>
-              </label>
-              <label class="form__label form__label--select">
+              </div>
+              <div class="form__label form__label--select">
                 <span>Выберите город</span>
                 <select class="form__select" required="" name="city">
                   <option value="" selected="" label=" "></option>
                   <option value="Санкт-Петербург">Санкт-Петербург</option>
                 </select>
-              </label>
+              </div>
               <label class="form__checkbox-label">
                 <input class="visually-hidden" required name="confirm" type="checkbox" value="Y">
                 <span>Я согласен на обработку моих<br> персональных<br> данных</span>
