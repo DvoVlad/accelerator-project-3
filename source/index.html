@@ -199,8 +199,8 @@
                     <input class="about__input" type="text" name="phone" required data-mask="+7 (000) 000-00-00" pattern="[+]7\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}">
                   </label>
                   <div class="about__label">
-                    <span>Выберите город</span>
-                    <select class="about__select" required name="city">
+                    <label for="modal-select">Выберите город</label>
+                    <select class="about__select" required name="city" id="modal-select">
                       <option value="" selected label=" "></option>
                       <option value="Санкт-Петербург">Санкт-Петербург</option>
                     </select>
@@ -1144,20 +1144,20 @@
                 остались вопросы — мы на них ответим!</p>
               <label class="form__label">
                 <span>Имя</span>
-                <input class="form__input form__input--name" type="text" name="name" required="">
+                <input class="form__input form__input--name" type="text" name="name" required>
               </label>
               <label class="form__label">
                 <span>Телефон</span>
-                <input class="form__input" type="text" name="phone" required="" data-mask="+7 (000) 000-00-00" title="Введите корректный номер" pattern="[+]7\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}">
+                <input class="form__input" type="text" name="phone" required data-mask="+7 (000) 000-00-00" title="Введите корректный номер" pattern="[+]7\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}">
               </label>
               <div class="form__label">
-                <span>Ваше сообщение</span>
-                <textarea class="form__text-area" name="text"></textarea>
+                <label for="textarea">Ваше сообщение</label>
+                <textarea class="form__text-area" name="text" id="textarea"></textarea>
               </div>
               <div class="form__label form__label--select">
-                <span>Выберите город</span>
-                <select class="form__select" required="" name="city">
-                  <option value="" selected="" label=" "></option>
+                <label for="form-select">Выберите город</label>
+                <select class="form__select" required name="city" id="form-select">
+                  <option value="" selected label=" "></option>
                   <option value="Санкт-Петербург">Санкт-Петербург</option>
                 </select>
               </div>

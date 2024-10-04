@@ -122,7 +122,8 @@
   margin-bottom: 20px;
 }
 
-.form__label span {
+.form__label span,
+.form__label label {
   display: block;
   font-size: 12px;
   line-height: 14px;
@@ -139,7 +140,7 @@
   }
 }
 
-.form__label--select span {
+.form__label--select label {
   @include media-desktop {
     line-height: 14px;
   }
