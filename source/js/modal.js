@@ -18,6 +18,13 @@ modalOpenButton.addEventListener('click', () => {
 });
 
 submitButton.addEventListener('click', () => {
-  const modalForm = document.querySelector('about__modal-form');
+  const modalForm = document.querySelector('.about__modal-form');
   modalForm.classList.add('about__modal-form--sended');
+});
+
+const nameField = document.querySelector('.about__input--name');
+nameField.addEventListener('keypress', (e) => {
+  if ('1234567890'.indexOf(e.key) !== -1) {
+    e.preventDefault();
+  }
 });
