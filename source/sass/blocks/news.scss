@@ -178,6 +178,7 @@
 .swiper-slide.news__swiper-slide:nth-child(3n + 1) img {
   @include media-desktop {
     object-fit: cover;
+    border-radius: 12px;
   }
 }
 
