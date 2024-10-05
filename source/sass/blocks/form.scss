@@ -341,9 +341,10 @@
     }
   }
 
-  &:focus {
+  &:focus-visible {
     background-color: transparent;
     border: 1px solid #ffffff;
+    color: #ffffff;
 
     &::after {
       background-color: #ffffff;

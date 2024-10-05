@@ -1,9 +1,8 @@
-const menuButton = document.querySelector('.page-header__menu-button');
 const menuField = document.querySelector('.page-header__button-field');
 const navigation = document.querySelector('.page-header__navigation');
 const overlay = document.querySelector('.page-header__menu-overlay');
 
-menuButton.addEventListener('click', () => {
+menuField.addEventListener('click', () => {
   menuField.classList.toggle('page-header__button-field--opened');
   navigation.classList.toggle('page-header__navigation--open');
   overlay.classList.toggle('page-header__menu-overlay--opened');

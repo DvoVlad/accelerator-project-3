@@ -44,8 +44,7 @@ new Swiper('.news__swiper', {
       slidesPerView: 'auto',
       spaceBetween: 20,
       grid: {
-        rows: 2,
-        //fill: 'row'
+        rows: 2
       },
     },
     768: {

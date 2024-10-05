@@ -248,6 +248,17 @@
     }
   }
 
+  &:focus-visible {
+    color: #316dc2;
+    background-color: transparent;
+
+    &::after {
+      background-image: url("/__spritemap#sprite-link-arrow-focus-view");
+      background-size: 10px 10px;
+      background-color: #316dc2;
+    }
+  }
+
   &:active {
     background-color: #316dc2;
     color: rgba(255, 255, 255, 0.7);
@@ -256,17 +267,6 @@
       background-color: #ffffff;
       background-image: url("/__spritemap#sprite-link-arrow-active-view");
       background-size: 10px 10px;
-    }
-  }
-
-  &:focus {
-    color: #316dc2;
-    background-color: transparent;
-
-    &::after {
-      background-image: url("/__spritemap#sprite-link-arrow-focus-view");
-      background-size: 10px 10px;
-      background-color: #316dc2;
     }
   }
 

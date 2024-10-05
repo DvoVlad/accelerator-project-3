@@ -168,7 +168,7 @@
 }
 
 .faq__accordeon:hover .faq__question-wrapper::after,
-.faq__accordeon:has(.faq__question-wrapper:focus) .faq__question-wrapper::after {
+.faq__accordeon:has(.faq__question-wrapper:focus-visible) .faq__question-wrapper::after {
   background-color: #ffffff;
   border: 1px solid #316dc2;
   background-image: url("/__spritemap#sprite-plus-hover-view");
@@ -193,7 +193,7 @@
 }
 
 .faq__accordeon--open:hover .faq__question-wrapper::after,
-.faq__accordeon--open:has(.faq__question-wrapper:focus) .faq__question-wrapper::after {
+.faq__accordeon--open:has(.faq__question-wrapper:focus-visible) .faq__question-wrapper::after {
   background-color: transparent;
   border: 1px solid #ffffff;
   background-image: url("/__spritemap#sprite-minus-hover-view");

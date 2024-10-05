@@ -49,6 +49,7 @@
 }
 
 .page-header__button-field {
+  padding: 0;
   width: 136px;
   height: 54px;
   box-sizing: border-box;
@@ -61,6 +62,7 @@
   justify-content: end;
   align-items: center;
   transition: width, background-color 0.2s;
+  cursor: pointer;
 
   @include media-tablet {
     right: 45px;
