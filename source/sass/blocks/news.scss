@@ -52,6 +52,7 @@
   gap: 12px;
 
   @include media-tablet {
+    flex-wrap: wrap;
     overflow: visible;
     gap: 10px;
   }
