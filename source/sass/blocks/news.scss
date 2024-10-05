@@ -76,6 +76,15 @@
   cursor: pointer;
   opacity: 0.6;
 
+  &:hover {
+    opacity: 1;
+  }
+
+  &:focus {
+    background-color: #ffffff;
+    opacity: 1;
+  }
+
   @include media-tablet {
     padding: 14px 20px;
     letter-spacing: 0.28px;
