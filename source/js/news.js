@@ -19,6 +19,19 @@ const updateBullets = () => {
   });
 };
 
+const updateMobileSize = () => {
+  if(window.matchMedia('(max-width: 767px)').matches) {
+    const slidesOdd = document.querySelectorAll('.swiper-slide.news__swiper-slide:nth-child(odd)');
+    const slidesEven = document.querySelectorAll('.swiper-slide.news__swiper-slide:nth-child(even)');
+    slidesOdd.forEach((slide) => {
+      slide.style.height = '330px';
+    });
+    slidesEven.forEach((slide) => {
+      slide.style.height = '240px';
+    });
+  }
+};
+
 new Swiper('.news__swiper', {
   modules: [Navigation, Pagination, Grid],
   loop: false,
@@ -57,16 +70,7 @@ new Swiper('.news__swiper', {
   },
   on: {
     afterInit: function() {
-      if(window.matchMedia('(max-width: 767px)').matches) {
-        const slidesOdd = document.querySelectorAll('.swiper-slide.news__swiper-slide:nth-child(odd)');
-        const slidesEven = document.querySelectorAll('.swiper-slide.news__swiper-slide:nth-child(even)');
-        slidesOdd.forEach((slide) => {
-          slide.style.height = '330px';
-        });
-        slidesEven.forEach((slide) => {
-          slide.style.height = '240px';
-        });
-      }
+      updateMobileSize();
       updateBullets();
     },
     slideChangeTransitionStart: function() {
